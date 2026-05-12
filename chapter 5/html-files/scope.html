@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Variable Scope</title>
+</head>
+<body>
+    <h2>Scope of Variables</h2>
+    <script type="text/javascript">
+        
+        var userRole = "Admin"; 
+        
+        function testScope(paramRole) {
+            var userRole = "Guest";                          
+            document.write("<p>Inside the function the role is: " + userRole + "</p>");
+        }        
+        testScope("Moderator");
+        
+        document.write("<p>Outside function the role is: " + userRole + "</p>");
+        
+        
+    </script>
+</body>
+</html>
