@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form Validation</title>
+    <script>
+        function validate() {
+            var email = document.getElementById("emailBox").value;
+            if(email.indexOf("@") === -1) {
+                alert("Enter valid email");
+                return false; 
+            }
+            return true;
+        }
+    </script>
+</head>
+<body>
+    <form onsubmit="return validate()">
+        Email: <input type="text" id="emailBox" />
+        <input type="submit" value="Submit" />
+    </form>
+</body>
+</html>
+

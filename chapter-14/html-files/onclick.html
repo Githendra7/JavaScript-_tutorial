@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>OnClick</title>
+    <script>
+        function callFunction() { alert("Function call"); }
+        window.onload = function() {
+            document.getElementById("btnRef").onclick = function() { alert("Reference call"); };
+        };
+    </script>
+</head>
+<body>
+    <button onclick="alert('Inline')">Inline</button>
+    <button onclick="callFunction()">Function Call</button>
+    <button id="btnRef">Function Reference</button>
+</body>
+</html>

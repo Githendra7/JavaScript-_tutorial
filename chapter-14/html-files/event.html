@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple Event Handler Example</title>
+
+    <script>
+        window.onload = function () {
+
+            document.getElementById("myButton").addEventListener("click", function (event) {
+
+                alert(
+                    "Event Type: " + event.type +
+                    "\nTarget Element: " + event.target.tagName
+                );
+
+            });
+
+        };
+    </script>
+</head>
+
+<body>
+
+    <button id="myButton">
+        Click Me
+    </button>
+
+</body>
+</html>
