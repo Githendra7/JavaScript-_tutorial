@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Loop Control</title>
+</head>
+<body>
+    <h2>Loop Control Statements</h2>
+
+    <script type="text/javascript">
+        //Break
+        document.write("<h3>Break Statement</h3>");
+        document.write("<p>Searching 4</p>");
+        
+        for (var i = 1; i <= 10; i++) {
+            if (i === 4) {
+                document.write("<b>4 Found</b><br />");
+                break;
+            }
+            document.write("Checking number: " + i + "<br />");
+        }
+
+        //Continue
+        document.write("<h3>Continue Statement</h3>");
+        document.write("<p>Counting from 1 to 7 skipping multiples of 3</p>");
+        
+        for (var j = 1; j <= 7; j++) {
+            if (j % 3 === 0) {
+                continue; 
+            }
+            document.write("Number: " + j + "<br />");
+        }
+    </script>
+</body>
+</html>

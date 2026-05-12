@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>For-In Loop Demonstrations</title>
+</head>
+<body>
+    <h2>Chapter 11: The For-In Loop</h2>
+
+    <script type="text/javascript">
+        document.write("<h3>Object Property Iteration</h3>");
+        var smartphone = {
+            brand: "Apple",
+            model: "iPhone",
+            storage: "256GB",
+            ram: "16GB"
+        };
+
+        document.write("<ul>");
+        for (var prop in smartphone) {
+            document.write("<li><b>" + prop + "</b>: " + smartphone[prop] + "</li>");
+        }
+        document.write("</ul>");
+    </script>
+</body>
+</html>
