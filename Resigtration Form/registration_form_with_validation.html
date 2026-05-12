@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Registration Form</title>
+</head>
+
+<body>
+
+<h1>Student Registration Form</h1>
+
+<form name="registrationForm" onsubmit="return validateForm()">
+
+    <h2>Personal Information</h2>
+
+    <div>
+        <label>1. First Name  </label><br>
+        <input type="text" name="firstName">
+    </div><br>
+
+    <div>
+        <label>2. Middle Name</label><br>
+        <input type="text" name="middleName">
+    </div><br>
+
+    <div>
+        <label>3. Last Name  </label><br>
+        <input type="text" name="lastName">
+    </div><br>
+
+    <div>
+        <label>4. Date of Birth  </label><br>
+        <input type="text" name="dob" placeholder="DD/MM/YYYY">
+    </div><br>
+
+    <div>
+        <label>5. Gender  </label><br>
+        <input type="radio" name="gender" value="Male"> Male
+        <input type="radio" name="gender" value="Female"> Female
+    </div><br>
+
+    <div>
+        <label>6. Blood Group  </label><br>
+        <select name="bloodGroup">
+            <option value="">Select</option>
+            <option>A+</option>
+            <option>B+</option>
+            <option>O+</option>
+        </select>
+    </div><br>
+
+    <div>
+        <label>7. Nationality  </label><br>
+        <input type="text" name="nationality">
+    </div><br>
+
+    <div>
+        <label>8. Religion</label><br>
+        <input type="text" name="religion">
+    </div><br>
+
+    <div>
+        <label>9. Category  </label><br>
+        <select name="category">
+            <option value="">Select</option>
+            <option>General</option>
+            <option>OBC</option>
+            <option>SC</option>
+        </select>
+    </div><br>
+
+    <div>
+        <label>10. Aadhar Number  </label><br>
+        <input type="text" name="aadhar">
+    </div><br>
+
+    <h2>Contact Information</h2>
+
+    <div>
+        <label>11. Email  </label><br>
+        <input type="text" name="email">
+    </div><br>
+
+    <div>
+        <label>12. Phone Number  </label><br>
+        <input type="text" name="phone">
+    </div><br>
+
+    <div>
+        <label>13. Alternate Phone</label><br>
+        <input type="text" name="altPhone">
+    </div><br>
+
+    <div>
+        <label>14. Emergency Contact Name  </label><br>
+        <input type="text" name="emergencyName">
+    </div><br>
+
+    <div>
+        <label>15. Emergency Contact Phone  </label><br>
+        <input type="text" name="emergencyPhone">
+    </div><br>
+
+    <div>
+        <label>16. Address Line 1  </label><br>
+        <input type="text" name="address1">
+    </div><br>
+
+    <div>
+        <label>17. Address Line 2</label><br>
+        <input type="text" name="address2">
+    </div><br>
+
+    <div>
+        <label>18. City  </label><br>
+        <input type="text" name="city">
+    </div><br>
+
+    <div>
+        <label>19. State  </label><br>
+        <input type="text" name="state">
+    </div><br>
+
+    <div>
+        <label>20. Pincode  </label><br>
+        <input type="text" name="pincode">
+    </div><br>
+
+    <h2>Academic Information</h2>
+
+    <div>
+        <label>21. Course  </label><br>
+        <input type="text" name="course">
+    </div><br>
+
+    <div>
+        <label>22. Department  </label><br>
+        <input type="text" name="department">
+    </div><br>
+
+    <div>
+        <label>23. Specialization</label><br>
+        <input type="text" name="specialization">
+    </div><br>
+
+    <div>
+        <label>24. Year of Study  </label><br>
+        <input type="text" name="year">
+    </div><br>
+
+    <div>
+        <label>25. Semester  </label><br>
+        <input type="text" name="semester">
+    </div><br>
+
+    <div>
+        <label>26. Roll Number  </label><br>
+        <input type="text" name="roll">
+    </div><br>
+
+    <div>
+        <label>27. Registration Number  </label><br>
+        <input type="text" name="regNo">
+    </div><br>
+
+    <div>
+        <label>28. Previous School  </label><br>
+        <input type="text" name="school">
+    </div><br>
+
+    <div>
+        <label>29. Previous Board  </label><br>
+        <input type="text" name="board">
+    </div><br>
+
+    <div>
+        <label>30. Percentage  </label><br>
+        <input type="text" name="percentage">
+    </div><br>
+
+    <h2>Family Information</h2>
+
+    <div>
+        <label>31. Father Name  </label><br>
+        <input type="text" name="fatherName">
+    </div><br>
+
+    <div>
+        <label>32. Father Occupation  </label><br>
+        <input type="text" name="fatherOccupation">
+    </div><br>
+
+    <div>
+        <label>33. Father Phone  </label><br>
+        <input type="text" name="fatherPhone">
+    </div><br>
+
+    <div>
+        <label>34. Mother Name  </label><br>
+        <input type="text" name="motherName">
+    </div><br>
+
+    <div>
+        <label>35. Mother Occupation</label><br>
+        <input type="text" name="motherOccupation">
+    </div><br>
+
+    <div>
+        <label>36. Mother Phone</label><br>
+        <input type="text" name="motherPhone">
+    </div><br>
+
+    <div>
+        <label>37. Guardian Name</label><br>
+        <input type="text" name="guardianName">
+    </div><br>
+
+    <div>
+        <label>38. Guardian Phone</label><br>
+        <input type="text" name="guardianPhone">
+    </div><br>
+
+    <div>
+        <label>39. Annual Income  </label><br>
+        <input type="text" name="income">
+    </div><br>
+
+    <div>
+        <label>40. Number of Siblings</label><br>
+        <input type="text" name="siblings">
+    </div><br>
+
+    <h2>Additional Information</h2>
+
+    <div>
+        <label>41. Hostel Required  </label><br>
+        <input type="radio" name="hostel" value="Yes"> Yes
+        <input type="radio" name="hostel" value="No"> No
+    </div><br>
+
+    <div>
+        <label>42. Transport Required  </label><br>
+        <input type="radio" name="transport" value="Yes"> Yes
+        <input type="radio" name="transport" value="No"> No
+    </div><br>
+
+    <div>
+        <label>43. Scholarship  </label><br>
+        <input type="radio" name="scholarship" value="Yes"> Yes
+        <input type="radio" name="scholarship" value="No"> No
+    </div><br>
+
+    <div>
+        <label>44. Sports Interest</label><br>
+        <input type="text" name="sports">
+    </div><br>
+
+    <div>
+        <label>45. Hobbies</label><br>
+        <input type="text" name="hobbies">
+    </div><br>
+
+    <div>
+        <label>46. Languages Known</label><br>
+        <input type="text" name="languages">
+    </div><br>
+
+    <div>
+        <label>47. Laptop Available  </label><br>
+        <input type="radio" name="laptop" value="Yes"> Yes
+        <input type="radio" name="laptop" value="No"> No
+    </div><br>
+
+    <div>
+        <label>48. Internet Access  </label><br>
+        <input type="radio" name="internet" value="Yes"> Yes
+        <input type="radio" name="internet" value="No"> No
+    </div><br>
+
+    <div>
+        <label>49. Medical Condition</label><br>
+        <input type="text" name="medical">
+    </div><br>
+
+    <div>
+        <input type="checkbox" name="declaration">
+        50. I declare all details are correct  
+    </div><br>
+
+    <input type="submit" value="Submit">
+    <input type="reset" value="Reset">
+
+</form>
+
+<script>
+
+function validateForm() {
+
+    var f = document.registrationForm;
+
+    var emailPattern = /^[^ ]+@[^ ]+\.[a-remaining]{2,3}$/;
+    var phonePattern = /^[0-9]{10}$/;
+    var aadharPattern = /^[0-9]{12}$/;
+    var pincodePattern = /^[0-9]{6}$/;
+
+    if(f.firstName.value == "") {
+        alert("Enter First Name");
+        return false;
+    }
+
+    if(f.lastName.value == "") {
+        alert("Enter Last Name");
+        return false;
+    }
+
+    if(f.dob.value == "") {
+        alert("Enter Date of Birth");
+        return false;
+    }
+
+    if(!f.gender[0].checked && !f.gender[1].checked) {
+        alert("Select Gender");
+        return false;
+    }
+
+    if(f.bloodGroup.value == "") {
+        alert("Select Blood Group");
+        return false;
+    }
+
+    if(f.nationality.value == "") {
+        alert("Enter Nationality");
+        return false;
+    }
+
+    if(f.category.value == "") {
+        alert("Select Category");
+        return false;
+    }
+
+    if(!aadharPattern.test(f.aadhar.value)) {
+        alert("Enter Valid Aadhar Number");
+        return false;
+    }
+
+    if(!emailPattern.test(f.email.value)) {
+        alert("Enter Valid Email");
+        return false;
+    }
+
+    if(!phonePattern.test(f.phone.value)) {
+        alert("Enter Valid Phone Number");
+        return false;
+    }
+
+    if(f.emergencyName.value == "") {
+        alert("Enter Emergency Contact Name");
+        return false;
+    }
+
+    if(!phonePattern.test(f.emergencyPhone.value)) {
+        alert("Enter Valid Emergency Phone");
+        return false;
+    }
+
+    if(f.address1.value == "") {
+        alert("Enter Address");
+        return false;
+    }
+
+    if(f.city.value == "") {
+        alert("Enter City");
+        return false;
+    }
+
+    if(f.state.value == "") {
+        alert("Enter State");
+        return false;
+    }
+
+    if(!pincodePattern.test(f.pincode.value)) {
+        alert("Enter Valid Pincode");
+        return false;
+    }
+
+    if(f.course.value == "") {
+        alert("Enter Course");
+        return false;
+    }
+
+    if(f.department.value == "") {
+        alert("Enter Department");
+        return false;
+    }
+
+    if(f.year.value == "") {
+        alert("Enter Year");
+        return false;
+    }
+
+    if(f.semester.value == "") {
+        alert("Enter Semester");
+        return false;
+    }
+
+    if(f.roll.value == "") {
+        alert("Enter Roll Number");
+        return false;
+    }
+
+    if(f.regNo.value == "") {
+        alert("Enter Registration Number");
+        return false;
+    }
+
+    if(f.school.value == "") {
+        alert("Enter Previous School");
+        return false;
+    }
+
+    if(f.board.value == "") {
+        alert("Enter Board");
+        return false;
+    }
+
+    if(f.percentage.value == "") {
+        alert("Enter Percentage");
+        return false;
+    }
+
+    if(f.fatherName.value == "") {
+        alert("Enter Father Name");
+        return false;
+    }
+
+    if(f.fatherOccupation.value == "") {
+        alert("Enter Father Occupation");
+        return false;
+    }
+
+    if(!phonePattern.test(f.fatherPhone.value)) {
+        alert("Enter Valid Father Phone");
+        return false;
+    }
+
+    if(f.motherName.value == "") {
+        alert("Enter Mother Name");
+        return false;
+    }
+
+    if(f.income.value == "") {
+        alert("Enter Annual Income");
+        return false;
+    }
+
+    if(!f.hostel[0].checked && !f.hostel[1].checked) {
+        alert("Select Hostel Option");
+        return false;
+    }
+
+    if(!f.transport[0].checked && !f.transport[1].checked) {
+        alert("Select Transport Option");
+        return false;
+    }
+
+    if(!f.scholarship[0].checked && !f.scholarship[1].checked) {
+        alert("Select Scholarship Option");
+        return false;
+    }
+
+    if(!f.laptop[0].checked && !f.laptop[1].checked) {
+        alert("Select Laptop Availability");
+        return false;
+    }
+
+    if(!f.internet[0].checked && !f.internet[1].checked) {
+        alert("Select Internet Access");
+        return false;
+    }
+
+    if(!f.declaration.checked) {
+        alert("Accept Declaration");
+        return false;
+    }
+
+    alert("Form Submitted Successfully");
+
+    return true;
+}
+
+</script>
+
+</body>
+</html>
