@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Confirm Dialog Demo</title>
+    <script>
+        function triggerConfirm() {
+            var userDecision = confirm("Are you sure you want to delete this");
+            
+            if (userDecision === true) {
+                document.getElementById("output").innerText = "Item deleted successfully.";
+            } else {
+                document.getElementById("output").innerText = "Deletion cancelled.";
+            }
+        }
+    </script>
+</head>
+<body>
+    <h2>Confirmation Box</h2>
+    <button onclick="triggerConfirm()">Delete Item</button>
+    <p id="output" style="color: red;"></p>
+</body>
+</html>
