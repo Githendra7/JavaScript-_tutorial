@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Switch Case </title>
+</head>
+<body>
+    <h2>Switch-Case </h2>
+    
+    <script type="text/javascript">
+      
+        var dayCode = 4;
+        var dayName;
+        
+        document.write("<h3>Day of the Week</h3>");
+        document.write("<p><b>Day Code:</b> " + dayCode + "</p>");
+
+        switch (dayCode) {
+            case 1:
+                dayName = "Monday";
+                break;
+            case 2:
+                dayName = "Tuesday";
+                break;
+            case 3:
+                dayName = "Wednesday";
+                break;
+            case 4:
+                dayName = "Thursday";
+                break;
+            case 5:
+                dayName = "Friday";
+                break;
+            case 6:
+                dayName = "Saturday";
+                break;
+            case 7:
+                dayName = "Sunday";
+                break;
+            default:
+                dayName = "Invalid day code! Please enter a number between 1 and 7.";
+        }
+        document.write("<p><b>Selected Day:</b> " + dayName + "</p>");
+
+    </script>
+</body>
+</html>
