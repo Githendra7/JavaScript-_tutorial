@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Functions Demo</title>
+    <script type="text/javascript">
+        function displayWelcome() {
+            document.write("<p><b>Functions</b></p>");
+        }
+        function calculateVolume(length, width, height) {
+            return length * width * height;
+        }
+        function createGreeting(firstName, lastName) {
+            var fullGreeting = "Hello, " + firstName + " " + lastName;
+            return fullGreeting;
+        }
+        function evaluateDiscount(purchaseAmount) {
+            if (purchaseAmount <= 0) {
+                return 0; 
+            }
+            return purchaseAmount * 0.10;
+        }
+
+        function doSomethingButReturnNothing() {
+            var internalCalculation = 50 * 2;
+        }
+        function handleUserClick() {
+            var greeting = createGreeting("Githendra ");
+            alert(greeting + "Volume of a 5 x 4 x 3 box is: " + calculateVolume(5, 4, 3));
+        }
+    </script>
+</head>
+<body>
+    <h2>Functions</h2>
+
+    <script type="text/javascript">
+        displayWelcome();
+        document.write("<h3>Calculating and then the return</h3>");
+        document.write("Volume 1 (2x3x4): <b>" + calculateVolume(2, 3, 4) + "</b><br />");
+        document.write("Volume 2 (5x5x5): <b>" + calculateVolume(5, 5, 5) + "</b><br />");
+
+        document.write("<h3>Early return </h3>");
+        document.write("Discount on Rs.100: <b>Rs." + evaluateDiscount(100) + "</b><br />");
+        document.write("Discount on Rs.0: <b>Rs." + evaluateDiscount(0) + "</b><br />");
+
+    </script>
+
+    <h3>Interactive Function Call</h3>
+    <p>Click the button below to trigger the function</p>
+    
+    <button onclick="handleUserClick()">Trigger Interactive Function Calls</button>
+</body>
+</html>
