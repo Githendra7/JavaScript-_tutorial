@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>If-Else Control Flow </title>
+</head>
+<body>
+    <h2>Chapter 7: Control Flow Statements</h2>
+    
+    <script type="text/javascript">
+        var temperature = 25;
+        document.write("<h3>1. Simple 'if' Statement</h3>");
+        document.write("<p>Current Temperature: " + temperature + " degrees.</p>");
+        if (temperature > 20 && temperature < 30) {
+            document.write("<b>Result:</b> It is a pleasant day<br />");
+        }
+
+
+
+        var userAge = 16;
+        document.write("<h3>2. 'if - else' Statement</h3>");
+        document.write("<p>User Age: " + userAge + "</p>");
+        if (userAge >= 18) {
+            document.write("<b>Result:</b> You are eligible to vote.<br />");
+        } else {
+            document.write("<b>Result:</b> You are not eligible to vote.<br />");
+        }
+
+
+
+        var testScore = 85;
+        document.write("<h3>3. 'if - else if - else' Statement</h3>");
+        document.write("<p>Test Score: " + testScore + "</p>");
+        document.write("<b>Grade:</b> ");
+        if (testScore >= 90) {
+            document.write("Grade A<br />");
+        } else if (testScore >= 80) {
+            document.write("Grade B<br />");
+        } else if (testScore >= 70) {
+            document.write("Grade C<br />");
+        } else if (testScore >= 60) {
+            document.write("Grade D<br />");
+        } else {
+            document.write("Fail<br />");
+        }
+
+    
+
+
+        var isMember = true;
+        var purchaseAmount = 150;
+        document.write("<h3>4. Nested 'if - else' Statements</h3>");
+        document.write("<p>Member Status: " + isMember + "  Purchase: " + purchaseAmount + "</p>");
+        document.write("<b>Discount Applied:</b> ");
+        
+        if (isMember) {
+            if (purchaseAmount >= 100) {
+                document.write("20% Premium Member Discount<br />");
+            } else {
+                document.write("10% Standard Member Discount<br />");
+            }
+        } else {
+            if (purchaseAmount >= 100) {
+                document.write("5% Volume Discount<br />");
+            } else {
+                document.write("No discount applied.<br />");
+            }
+        }
+    </script>
+</body>
+</html>
