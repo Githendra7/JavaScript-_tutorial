@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Read Cookie</title>
+    <script>
+        function viewCookies() {
+            var cookiesArray = document.cookie.split(';');
+            var output = "Saved Cookies:\n";
+            
+            for(var i = 0; i < cookiesArray.length; i++) {
+                var pair = cookiesArray[i].split('=');
+                if (pair.length === 2) {
+                    output += pair.trim() + " : " + unescape(pair[3]) + "\n";
+                }
+            }
+            alert(output);
+        }
+    </script>
+</head>
+<body>
+    <button onclick="viewCookies()">All Cookies</button>
+</body>
+</html>

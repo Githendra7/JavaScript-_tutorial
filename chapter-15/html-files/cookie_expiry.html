@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Expiring Cookie</title>
+    <script>
+        function setExpiringCookie() {
+            var d = new Date();
+            d.setDate(d.getDate() + 7);
+            
+            document.cookie = "theme=dark; expires=" + d.toUTCString() + ";";
+            alert("Cookie set to expire on: " + d.toUTCString());
+        }
+    </script>
+</head>
+<body>
+    <button onclick="setExpiringCookie()">7 day expiry is set</button>
+</body>
+</html>

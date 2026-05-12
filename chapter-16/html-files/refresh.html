@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Page Refresh</title>
+    <script type="text/javascript">
+        function softRefresh() {
+            location.reload(); 
+        }
+        function hardRefresh() {
+            location.reload(true); 
+        }
+    </script>
+</head>
+<body>
+    <h2>Manual Page Refresh</h2>
+    
+    <button onclick="softRefresh()">Soft Refresh</button>
+    <button onclick="hardRefresh()">Hard Refresh</button>
+    <br><br>    
+</body>
+</html>

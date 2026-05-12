@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Set Cookie</title>
+    <script>
+        function saveCookie() {
+            var userName = escape(document.getElementById("user").value);
+            document.cookie = "userCookie=" + userName + ";";
+            alert("Cookie saved");
+        }
+    </script>
+</head>
+<body>
+    <input type="text" id="user" placeholder="Enter your name" />
+    <button onclick="saveCookie()">Set Cookie</button>
+</body>
+</html>

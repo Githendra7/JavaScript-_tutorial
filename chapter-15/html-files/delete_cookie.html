@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Delete Cookie</title>
+    <script>
+        function removeCookie() {
+            var d = new Date();
+            d.setMonth(d.getMonth() - 1);
+            document.cookie = "userCookie=; expires=" + d.toUTCString() + ";";
+            alert("Cookie deleted!");
+        }
+    </script>
+</head>
+<body>
+    <button onclick="removeCookie()">Delete User Cookie</button>
+</body>
+</html>
